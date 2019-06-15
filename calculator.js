@@ -44,25 +44,25 @@ if (operator === -1){
 })
 
 $('.equal').on('click', function (){
-    if(operator !== -1) {
-        switch(operator){
-            case "plus":
-                    $('#result').text((parseInt(num1) + parseInt(num2)));
-                    break;
-                case "minus":
-                    $('#result').text((parseInt(num1) - parseInt(num2)));
-                    break;
-                case "times":
-                    $('#result').text((parseInt(num1) * parseInt(num2)));
-                    break;
-                case "divide":
-                    $('#result').text((parseInt(num1) / parseInt(num2)));
-                    break;
-                case "power":
-                    $('#result').text((Math.pow(parseInt(num1), parseInt(num2))));
-                    break;
-        }
+if(operator !== -1) {
+    switch(operator){
+        case "plus":
+            $('#result').text((parseInt(num1) + parseInt(num2)));
+            break;
+        case "minus":
+            $('#result').text((parseInt(num1) - parseInt(num2)));
+            break;
+        case "times":
+            $('#result').text((parseInt(num1) * parseInt(num2)));
+            break;
+        case "divide":
+            $('#result').text((parseInt(num1) / parseInt(num2)));
+            break;
+        case "power":
+            $('#result').text((Math.pow(parseInt(num1), parseInt(num2))));
+            break;
     }
+}
 })
 
 $('#button-clear').on('click', function() {
